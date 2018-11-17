@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Tic_Tac_Watch_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="12" alignment="left" textAlignment="center" id="Ovk-tR-h6h">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <group width="1" height="50" alignment="center" verticalAlignment="bottom" id="JJ5-eK-HM3">
+                            <items>
+                                <button width="50" height="50" alignment="left" id="jNp-id-hYO">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_1" destination="AgC-eL-Hgc" id="DeM-4P-wbs"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="left" id="dRT-Ev-Yz8">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_2" destination="AgC-eL-Hgc" id="qw2-I0-X3f"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="right" id="86x-eU-WxK">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_3" destination="AgC-eL-Hgc" id="whn-T9-WYV"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="center" verticalAlignment="bottom" id="DPp-wv-xoh">
+                            <items>
+                                <button width="50" height="50" alignment="left" id="OPo-qI-pqD">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_4" destination="AgC-eL-Hgc" id="QQh-zJ-lHm"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="left" id="qjL-MY-K1g">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_5" destination="AgC-eL-Hgc" id="Odp-fC-QbI"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="right" id="paD-ia-9Xi">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_6" destination="AgC-eL-Hgc" id="aYa-g6-ScQ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="50" alignment="center" verticalAlignment="bottom" id="WT4-hT-WLM">
+                            <items>
+                                <button width="50" height="50" alignment="left" id="uto-nb-S5y">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_7" destination="AgC-eL-Hgc" id="eY4-jO-hPr"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="left" id="kiJ-lK-KYK">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_8" destination="AgC-eL-Hgc" id="gTM-8z-A78"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="right" id="bpF-Ap-zzu">
+                                    <fontDescription key="font" type="system" pointSize="40"/>
+                                    <connections>
+                                        <action selector="Vajutati_9" destination="AgC-eL-Hgc" id="BCq-qc-bNE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="wbK-im-cSz">
+                        <items>
+                            <menuItem title="Uus Mäng" icon="resume" id="APJ-t2-JaN">
+                                <connections>
+                                    <action selector="Uus_Mäng_Vajutati" destination="AgC-eL-Hgc" id="QlA-ry-4eL"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Raskus Tase" icon="more" id="z4w-D9-bsn">
+                                <connections>
+                                    <action selector="Raskus_Tase_Vajutati" destination="AgC-eL-Hgc" id="C0g-PE-CwP"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="Nupp_1" destination="jNp-id-hYO" id="ywa-IW-NnE"/>
+                        <outlet property="Nupp_2" destination="dRT-Ev-Yz8" id="SeS-KN-Rq5"/>
+                        <outlet property="Nupp_3" destination="86x-eU-WxK" id="KYl-mV-PzV"/>
+                        <outlet property="Nupp_4" destination="OPo-qI-pqD" id="BGO-sK-Pya"/>
+                        <outlet property="Nupp_5" destination="qjL-MY-K1g" id="d4P-rP-ifT"/>
+                        <outlet property="Nupp_6" destination="paD-ia-9Xi" id="x0u-AL-bcU"/>
+                        <outlet property="Nupp_7" destination="uto-nb-S5y" id="jET-MO-yDW"/>
+                        <outlet property="Nupp_8" destination="kiJ-lK-KYK" id="yUA-dz-Zvc"/>
+                        <outlet property="Nupp_9" destination="bpF-Ap-zzu" id="VPI-Hv-xa9"/>
+                        <outlet property="Silt" destination="Ovk-tR-h6h" id="W6F-hl-0lT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="24.410256410256412" y="30.948717948717952"/>
+        </scene>
+    </scenes>
+</document>
